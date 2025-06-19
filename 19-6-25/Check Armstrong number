@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Armstrong {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt(), original = num, result = 0;
+        while (num != 0) {
+            int digit = num % 10;
+            result += digit * digit * digit;
+            num /= 10;
+        }
+        System.out.println(original == result ? "Armstrong" : "Not Armstrong");
+    }
+}
