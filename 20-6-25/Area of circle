@@ -1,0 +1,8 @@
+import java.util.Scanner;
+public class CircleArea {
+    public static void main(String[] args) {
+        double r = new Scanner(System.in).nextDouble();
+        double area = Math.PI * r * r;
+        System.out.printf("Area: %.2f", area);
+    }
+}
