@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Armstrong {
+    public static void main(String[] args) {
+        int n = new Scanner(System.in).nextInt(), sum = 0, temp = n;
+        while (n != 0) {
+            int d = n % 10;
+            sum += d * d * d;
+            n /= 10;
+        }
+        System.out.println(temp == sum ? "Armstrong" : "Not Armstrong");
+    }
+}
