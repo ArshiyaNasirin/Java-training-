@@ -1,0 +1,8 @@
+def lonely_integer(arr):
+    result = 0
+    for num in arr:
+        result ^= num
+    return result
+
+# Example
+print(lonely_integer([1, 2, 3, 2, 1]))
