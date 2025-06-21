@@ -1,0 +1,11 @@
+def diagonal_diff(matrix):
+    n = len(matrix)
+    d1 = d2 = 0
+    for i in range(n):
+        d1 += matrix[i][i]
+        d2 += matrix[i][n-i-1]
+    return abs(d1 - d2)
+
+# Example
+mat = [[11,2,4], [4,5,6], [10,8,-12]]
+print(diagonal_diff(mat))  # Output: 15
