@@ -1,0 +1,5 @@
+def find_largest(nums):
+    return max(nums)
+
+# Example
+print(find_largest([3, 5, 1, 9, 2]))  # Output: 9
