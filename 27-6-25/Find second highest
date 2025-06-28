@@ -1,0 +1,5 @@
+records = [[input(), float(input())] for _ in range(int(input()))]
+scores = sorted({score for name, score in records})
+second = scores[1]
+for name in sorted(name for name, score in records if score == second):
+    print(name)
